@@ -1,0 +1,220 @@
+/*Template Name: Dashboard
+Author: Clean Heart
+Verson: 1.0.0
+*/
+
+/*Root Variable*/
+
+:root{
+  --border-color:rgb(59 130 246 / 0.5);
+  --icon-color:#94A9C7;
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  --icon-bg-color: rgb(251 252 255 / var(--tw-bg-opacity));
+  --text-color: rgb(135 154 182 / var(--tw-text-opacity));
+}
+
+/*******Theme Default*******/
+
+body{
+  background: -o-linear-gradient(100deg, #f4f9ff, #edf4ffc9), url(../images/body.png) ;
+  background: linear-gradient(350deg, #f4f9ff, #edf4ffc9), url(../images/body.png) ;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+i{
+  line-height: 0;
+}
+img{
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+
+}
+ul{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px;
+  padding: 0;
+  
+}
+li{
+  list-style-type:none;
+}
+
+
+section{
+  max-width: 650px;
+  padding: 30px;
+  margin: auto;
+  background: #fff;
+  border-radius: 4px;
+}
+/******Home Bar*******/
+.homebar{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background:var(--icon-bg-color);
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  border-radius: 4px;
+  color: #94A9C7;
+}
+.homebar .right{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+/****** Logo Wrapper Start Hare********/
+.logo-wrapper{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 29px;
+}
+.logo-wrapper .left{
+  padding-right: 35px;
+}
+.logo-wrapper img{
+  width:85px;
+  height: 85px;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.logo-wrapper img:hover{
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.logo-wrapper h3{
+  color: rgb(135 154 182 / var(--tw-text-opacity));
+  text-transform: uppercase;
+
+}
+.support-wrapper{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.support-wrapper .inner{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  background: rgb(251 252 255);
+  padding: 11px;
+  border-radius: 4px;
+  color: var(--text-color);
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+}
+.support-wrapper .inner+ .inner .icon{
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+}
+/****** Logo Wrapper End Hare*********/
+
+/****** Mobile Banking Hare*********/
+.bk-btn{
+  margin-top: 25px;
+}
+.bk-btn .btn{
+  display: inline-block;
+  width: 100%;
+  background: #004cb7;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 0;
+  border-radius: 4px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+.bk-btn .bt-icon{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.bk-btn .bt-icon .inner{
+  padding: 9px 19px;
+  background:#fff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.bk-btn .bt-icon .inner img{
+  width: 90px;
+  height: 41px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.bk-btn .bt-icon .inner img:hover{
+  -webkit-transform: scale(.9);
+      -ms-transform: scale(.9);
+          transform: scale(.9);
+}
+
+/******Pay *******/
+.pay a{
+  display: inline-block;
+  width: 100%;
+  color: #004cb7;
+  border-radius: 10px;
+  padding: 15px 5px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: rgb(205 225 255 / 0.8);
+}

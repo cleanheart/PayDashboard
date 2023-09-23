@@ -1,0 +1,24 @@
+@media(max-width:525px){
+  .logo-wrapper{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  } 
+  .logo-wrapper .left{
+    padding-right: 0;
+  }
+
+  .logo-wrapper img{
+    text-align: center;
+  }
+
+  .logo-wrapper h3{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+    
+  
+}
